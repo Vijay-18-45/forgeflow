@@ -38,7 +38,7 @@ function Path({
 
 export function WhyVertical() {
   return (
-    <Section surface="solid">
+    <Section surface="solid" scrim={0.5}>
       <h2 className="text-3xl font-medium sm:text-4xl">Depth beats breadth.</h2>
       <div className="mt-12 grid gap-5 md:grid-cols-2">
         <Path title="Generic path" steps={genericPath} />

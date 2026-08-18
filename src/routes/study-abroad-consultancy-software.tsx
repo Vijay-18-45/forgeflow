@@ -135,7 +135,7 @@ function StudyAbroadPage() {
           </div>
         </section>
 
-        <Section surface="solid">
+        <Section surface="solid" scrim={0.5}>
           <h2 className="max-w-2xl text-3xl font-medium sm:text-4xl">
             The consultancy workflow, end to end.
           </h2>
@@ -161,7 +161,7 @@ function StudyAbroadPage() {
           </div>
         </Section>
 
-        <Section surface="solid">
+        <Section surface="solid" scrim={0.5}>
           <h2 className="max-w-2xl text-3xl font-medium sm:text-4xl">
             Where consultancies lose time.
           </h2>

@@ -3,7 +3,7 @@ import { Section } from "./Section";
 
 export function Principles() {
   return (
-    <Section id="platform" surface="solid">
+    <Section id="platform" surface="solid" scrim={0.5}>
       <div className="max-w-2xl">
         <h2 className="text-3xl font-medium sm:text-4xl">Generic AI isn't enough.</h2>
         <p className="mt-5 text-base leading-relaxed text-text-body">
