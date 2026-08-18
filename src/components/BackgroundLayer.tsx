@@ -17,7 +17,7 @@ export function BackgroundLayer() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.78)), radial-gradient(ellipse 90% 60% at 50% 0%, rgba(3,140,244,0.10), transparent 70%)",
+            "linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.55)), radial-gradient(ellipse 90% 60% at 50% 0%, rgba(3,140,244,0.10), transparent 70%)",
         }}
       />
       <div
