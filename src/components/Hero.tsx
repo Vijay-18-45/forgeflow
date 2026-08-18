@@ -1,5 +1,4 @@
 import { processSteps } from "@/data/forgeflowData";
-import { HeroProduct } from "./HeroProduct";
 
 export function Hero() {
   return (
@@ -41,10 +40,6 @@ export function Hero() {
                 </span>
               ))}
             </div>
-          </div>
-
-          <div className="rise w-full max-w-3xl" style={{ animationDelay: "120ms" }}>
-            <HeroProduct />
           </div>
         </div>
       </div>
