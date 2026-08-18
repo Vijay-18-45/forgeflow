@@ -7,15 +7,11 @@ import { BRAND_IMAGE } from "@/data/forgeflowData";
  */
 export function BackgroundLayer() {
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10">
-      <div
-        className="forge-bg absolute inset-0 bg-forge-black"
-        style={{
-          backgroundImage: `url("${BRAND_IMAGE}")`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
+      <img
+        src={BRAND_IMAGE}
+        alt=""
+        className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] lg:object-contain lg:object-center"
       />
       <div
         className="absolute inset-0"
@@ -31,11 +27,7 @@ export function BackgroundLayer() {
             "radial-gradient(ellipse 60% 40% at 80% 90%, rgba(3,196,246,0.06), transparent 70%)",
         }}
       />
-      <style>{`
-        @media (max-width: 768px) {
-          .forge-bg { background-position: 55% center; }
-        }
-      `}</style>
     </div>
   );
 }
+
