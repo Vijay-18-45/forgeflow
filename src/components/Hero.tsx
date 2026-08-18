@@ -41,10 +41,6 @@ export function Hero() {
               ))}
             </div>
           </div>
-
-          <div className="rise w-full max-w-3xl" style={{ animationDelay: "120ms" }}>
-            <HeroProduct />
-          </div>
         </div>
       </div>
     </section>
