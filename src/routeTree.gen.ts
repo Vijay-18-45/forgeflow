@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as StudyAbroadConsultancySoftwareRouteImport } from './routes/study-abroad-consultancy-software'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,41 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StudyAbroadConsultancySoftwareRoute =
+  StudyAbroadConsultancySoftwareRouteImport.update({
+    id: '/study-abroad-consultancy-software',
+    path: '/study-abroad-consultancy-software',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/study-abroad-consultancy-software': typeof StudyAbroadConsultancySoftwareRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/study-abroad-consultancy-software': typeof StudyAbroadConsultancySoftwareRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/study-abroad-consultancy-software': typeof StudyAbroadConsultancySoftwareRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/sitemap.xml'
+  fullPaths: '/' | '/sitemap.xml' | '/study-abroad-consultancy-software'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/sitemap.xml'
-  id: '__root__' | '/' | '/sitemap.xml'
+  to: '/' | '/sitemap.xml' | '/study-abroad-consultancy-software'
+  id: '__root__' | '/' | '/sitemap.xml' | '/study-abroad-consultancy-software'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StudyAbroadConsultancySoftwareRoute: typeof StudyAbroadConsultancySoftwareRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +76,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/study-abroad-consultancy-software': {
+      id: '/study-abroad-consultancy-software'
+      path: '/study-abroad-consultancy-software'
+      fullPath: '/study-abroad-consultancy-software'
+      preLoaderRoute: typeof StudyAbroadConsultancySoftwareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StudyAbroadConsultancySoftwareRoute: StudyAbroadConsultancySoftwareRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
