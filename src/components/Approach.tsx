@@ -3,7 +3,7 @@ import { Section } from "./Section";
 
 export function Approach() {
   return (
-    <Section id="approach" scrim={0.74}>
+    <Section id="approach" scrim={0.88}>
       <div className="max-w-2xl">
         <p className="label-mono">Our approach</p>
         <h2 className="mt-5 text-3xl font-medium sm:text-4xl">We don't start with AI.</h2>

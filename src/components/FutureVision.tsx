@@ -3,7 +3,7 @@ import { Section } from "./Section";
 
 export function FutureVision() {
   return (
-    <Section scrim={0.68}>
+    <Section scrim={0.85}>
       <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
         <div>
           <h2 className="text-3xl font-medium sm:text-4xl">One vertical at a time.</h2>

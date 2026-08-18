@@ -3,7 +3,7 @@ import { Section } from "./Section";
 
 export function Verticals() {
   return (
-    <Section id="verticals" scrim={0.7}>
+    <Section id="verticals" scrim={0.85}>
       <div className="max-w-2xl">
         <h2 className="text-3xl font-medium sm:text-4xl">Built vertically.</h2>
         <p className="mt-4 text-base text-text-body">We go deep before we go wide.</p>
