@@ -19,8 +19,8 @@ const tabs = [
 const navItems = ["Overview", "Students", "Applications", "Documents", "Follow-ups"];
 
 export function ProductDashboard() {
-  const [active, setActive] = useState(tabs[0].id);
-  const ActivePanel = tabs.find((t) => t.id === active)!.Panel;
+  const [active, setActive] = useState<string>("students");
+  const ActivePanel = (tabs.find((t) => t.id === active) ?? tabs[0]!).Panel;
 
   return (
     <div className="overflow-hidden rounded-lg border border-line bg-surface/90 backdrop-blur-md">
