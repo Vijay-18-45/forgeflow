@@ -6,7 +6,7 @@ import { ProductDashboard } from "./ProductDashboard";
 
 export function EduVertical() {
   return (
-    <Section id="edu" surface="solid">
+    <Section id="edu" surface="solid" scrim={0.55}>
       <p className="label-mono">First vertical</p>
       <h2 className="mt-5 text-3xl font-medium sm:text-4xl">ForgeFlow EDU</h2>
       <p className="mt-4 max-w-xl text-base text-text-body">

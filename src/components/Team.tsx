@@ -3,7 +3,7 @@ import { Section } from "./Section";
 
 export function Team() {
   return (
-    <Section id="about" surface="solid">
+    <Section id="about" surface="solid" scrim={0.45}>
       <h2 className="max-w-2xl text-3xl font-medium sm:text-4xl">
         Built by people who care about the workflow.
       </h2>
