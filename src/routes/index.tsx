@@ -11,6 +11,7 @@ import { WhyVertical } from "@/components/WhyVertical";
 import { FutureVision } from "@/components/FutureVision";
 import { Team } from "@/components/Team";
 import { CTA } from "@/components/CTA";
+import { HeroProduct } from "@/components/HeroProduct";
 import { Footer } from "@/components/Footer";
 import { BRAND_IMAGE } from "@/data/forgeflowData";
 
