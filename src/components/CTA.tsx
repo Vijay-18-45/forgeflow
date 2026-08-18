@@ -3,10 +3,10 @@ export function CTA() {
     <section id="contact" className="relative border-t border-line-subtle">
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-forge-black/45"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(2,113,242,0.10), transparent 70%)",
+            "linear-gradient(rgba(4,6,10,0.5), rgba(4,6,10,0.6)), radial-gradient(ellipse 70% 60% at 50% 100%, rgba(2,113,242,0.10), transparent 70%)",
         }}
       />
       <div className="relative mx-auto max-w-6xl px-5 py-24 text-center sm:px-8 sm:py-32">

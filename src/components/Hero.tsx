@@ -3,7 +3,16 @@ import { processSteps } from "@/data/forgeflowData";
 export function Hero() {
   return (
     <section id="top" className="relative">
-      <div className="mx-auto max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pb-32 sm:pt-40">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 65% at 50% 45%, rgba(4,6,10,0.62), rgba(4,6,10,0.28) 75%, transparent)",
+        }}
+      />
+      <div className="relative mx-auto max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pb-32 sm:pt-40">
+
         <div className="flex flex-col items-center gap-14 lg:gap-16">
           <div className="rise max-w-3xl text-center">
             <p className="label-mono">ForgeFlow AI</p>
