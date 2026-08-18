@@ -85,6 +85,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "ForgeFlow AI" },
       { name: "theme-color", content: "#000000" },
+      {
+        name: "google-site-verification",
+        content: "3X0m8qAzBTI4axcATsbxlh7j578ZVqiyKw9L6dzD2JE",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
