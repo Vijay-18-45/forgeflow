@@ -29,8 +29,12 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: BRAND_IMAGE },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: BRAND_IMAGE },
+      { property: "og:url", content: "https://forgeflows.lovable.app/" },
     ],
-    links: [{ rel: "preload", as: "image", href: BRAND_IMAGE }],
+    links: [
+      { rel: "canonical", href: "https://forgeflows.lovable.app/" },
+      { rel: "preload", as: "image", href: BRAND_IMAGE },
+    ],
   }),
   component: Index,
 });
