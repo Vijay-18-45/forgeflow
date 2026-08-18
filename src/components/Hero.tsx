@@ -1,5 +1,4 @@
 import { processSteps } from "@/data/forgeflowData";
-import { HeroProduct } from "./HeroProduct";
 
 export function Hero() {
   return (
