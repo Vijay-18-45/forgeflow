@@ -56,6 +56,15 @@ function Index() {
         <Team />
         <CTA />
       </main>
+
+      <section className="relative border-t border-line bg-surface/40 py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <div className="mx-auto max-w-3xl">
+            <HeroProduct />
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
