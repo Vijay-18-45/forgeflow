@@ -7,12 +7,18 @@ import { BRAND_IMAGE } from "@/data/forgeflowData";
  */
 export function BackgroundLayer() {
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
-      <img
-        src={BRAND_IMAGE}
-        alt=""
-        className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] lg:object-contain lg:object-center"
-      />
+    <div
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-forge-black"
+    >
+      {/* Slightly oversized container keeps the image centered and covering on all screens. */}
+      <div className="absolute -inset-[3%] h-[106%] w-[106%] lg:-inset-[4%] lg:h-[108%] lg:w-[108%]">
+        <img
+          src={BRAND_IMAGE}
+          alt=""
+          className="h-full w-full object-cover object-center"
+        />
+      </div>
       <div
         className="absolute inset-0"
         style={{
@@ -30,4 +36,5 @@ export function BackgroundLayer() {
     </div>
   );
 }
+
 
