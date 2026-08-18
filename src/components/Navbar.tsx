@@ -27,10 +27,9 @@ export function Navbar() {
       >
         <a
           href="#top"
-          aria-label="ForgeFlow AI home"
           className="font-display text-[0.9rem] font-medium tracking-[0.22em] text-text-primary"
         >
-          <span className="sr-only">ForgeFlow AI</span>
+          FORGEFLOW AI
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
