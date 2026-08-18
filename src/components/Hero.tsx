@@ -6,7 +6,8 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pb-32 sm:pt-40">
         <div className="flex flex-col items-center gap-14 lg:gap-16">
           <div className="rise max-w-3xl text-center">
-            <h1 className="text-4xl font-medium leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
+            <p className="label-mono">ForgeFlow AI</p>
+            <h1 className="mt-5 text-4xl font-medium leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
               Intelligence built for your industry.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-text-body sm:text-lg">
