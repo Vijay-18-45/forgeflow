@@ -1,5 +1,24 @@
-export const BRAND_IMAGE =
-  "https://res.cloudinary.com/prfxdvsk/image/upload/v1787065753/forgeflow.jpg";
+const CLOUDINARY_BASE =
+  "https://res.cloudinary.com/prfxdvsk/image/upload";
+const BRAND_IMAGE_PATH = "v1787065753/forgeflow.jpg";
+
+/** Cloudinary-transformed brand image: auto format (AVIF/WebP), auto quality, width-capped. */
+export function brandImageUrl(width: number) {
+  return `${CLOUDINARY_BASE}/f_auto,q_auto:good,c_limit,w_${width}/${BRAND_IMAGE_PATH}`;
+}
+
+export const BRAND_IMAGE_WIDTHS = [640, 960, 1254];
+
+export const BRAND_IMAGE_SRCSET = BRAND_IMAGE_WIDTHS.map(
+  (w) => `${brandImageUrl(w)} ${w}w`,
+).join(", ");
+
+/** Sizes: mobile covers the viewport, desktop is letterboxed to viewport height. */
+export const BRAND_IMAGE_SIZES = "(min-width: 1024px) 100vh, 100vw";
+
+/** Default / social-preview URL. */
+export const BRAND_IMAGE = brandImageUrl(1254);
+
 
 export const navLinks = [
   { label: "Platform", href: "#platform" },

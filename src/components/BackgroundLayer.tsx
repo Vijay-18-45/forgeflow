@@ -1,16 +1,28 @@
-import { BRAND_IMAGE } from "@/data/forgeflowData";
+import {
+  BRAND_IMAGE,
+  BRAND_IMAGE_SIZES,
+  BRAND_IMAGE_SRCSET,
+} from "@/data/forgeflowData";
 
 /**
  * Single global atmospheric background.
  * Layer order: Image -> Dark overlay -> Blue/cyan ambient -> Content.
  * Fixed, static (no motion), responsive focal point via CSS media query.
+ * Image is served through Cloudinary with auto format/quality + width variants
+ * and is fetched with high priority since it is the first paint surface.
  */
 export function BackgroundLayer() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
       <img
         src={BRAND_IMAGE}
+        srcSet={BRAND_IMAGE_SRCSET}
+        sizes={BRAND_IMAGE_SIZES}
         alt=""
+        width={1254}
+        height={1254}
+        decoding="async"
+        fetchPriority="high"
         className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] lg:object-contain lg:object-center"
       />
       <div
@@ -30,4 +42,3 @@ export function BackgroundLayer() {
     </div>
   );
 }
-

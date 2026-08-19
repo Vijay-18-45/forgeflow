@@ -13,7 +13,7 @@ import { Team } from "@/components/Team";
 import { CTA } from "@/components/CTA";
 import { HeroProduct } from "@/components/HeroProduct";
 import { Footer } from "@/components/Footer";
-import { BRAND_IMAGE } from "@/data/forgeflowData";
+import { BRAND_IMAGE, BRAND_IMAGE_SIZES, BRAND_IMAGE_SRCSET } from "@/data/forgeflowData";
 
 const title = "ForgeFlow AI — Vertical Intelligence for Real-World Industries";
 const description =
@@ -34,7 +34,15 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "https://forgeflows.lovable.app/" },
-      { rel: "preload", as: "image", href: BRAND_IMAGE },
+      { rel: "preconnect", href: "https://res.cloudinary.com", crossOrigin: "" },
+      {
+        rel: "preload",
+        as: "image",
+        href: BRAND_IMAGE,
+        imagesrcset: BRAND_IMAGE_SRCSET,
+        imagesizes: BRAND_IMAGE_SIZES,
+        fetchpriority: "high",
+      },
     ],
   }),
   component: Index,
