@@ -12,16 +12,33 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-// Add the real ForgeFlow AI profile URLs here to show each icon.
-// Leave a value empty ("") and that icon stays hidden — no placeholder links.
 const socialLinks = [
-  { label: "LinkedIn", href: "", icon: Linkedin },
-  { label: "Instagram", href: "", icon: Instagram },
-  { label: "Facebook", href: "", icon: Facebook },
-  { label: "Twitter", href: "", icon: Twitter },
-  { label: "WhatsApp", href: "", icon: WhatsAppIcon },
-].filter((s) => s.href.length > 0);
-
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com",
+    icon: Linkedin,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com",
+    icon: Instagram,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com",
+    icon: Facebook,
+  },
+  {
+    label: "Twitter",
+    href: "https://www.twitter.com",
+    icon: Twitter,
+  },
+  {
+    label: "WhatsApp",
+    href: "https://wa.me/",
+    icon: WhatsAppIcon,
+  },
+];
 
 export function Footer() {
   return (
@@ -48,31 +65,22 @@ export function Footer() {
           </nav>
 
           <div className="flex flex-col gap-4">
-            <p className="text-xs uppercase tracking-widest text-text-muted">Contact</p>
-            <a
-              href="mailto:hello@forgeflow.ai"
-              className="text-sm text-text-muted transition-colors hover:text-text-secondary"
-            >
-              hello@forgeflow.ai
-            </a>
-            {socialLinks.length > 0 && (
-              <div className="flex items-center gap-4">
-                {socialLinks.map(({ label, href, icon: Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label={label}
-                    className="grid h-9 w-9 place-items-center rounded-full text-text-muted transition-colors duration-200 hover:bg-surface hover:text-text-primary active:bg-elevated active:text-electric"
-                  >
-                    <Icon className="h-[18px] w-[18px]" />
-                  </a>
-                ))}
-              </div>
-            )}
+            <p className="text-xs uppercase tracking-widest text-text-muted">Follow us</p>
+            <div className="flex items-center gap-4">
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label={label}
+                  className="grid h-9 w-9 place-items-center rounded-full text-text-muted transition-colors duration-200 hover:bg-surface hover:text-text-primary active:bg-elevated active:text-electric"
+                >
+                  <Icon className="h-[18px] w-[18px]" />
+                </a>
+              ))}
+            </div>
           </div>
-
         </div>
       </div>
       <div className="border-t border-line-subtle">

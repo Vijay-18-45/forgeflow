@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 
 export function CTA() {
   return (
@@ -32,6 +33,16 @@ export function CTA() {
             Explore our approach
           </a>
         </div>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="ForgeFlow AI on LinkedIn"
+          className="mx-auto mt-8 inline-flex items-center gap-2 text-sm text-text-muted transition-colors hover:text-text-primary"
+        >
+          <Linkedin className="h-5 w-5" />
+          <span>Connect on LinkedIn</span>
+        </a>
       </div>
     </section>
   );
