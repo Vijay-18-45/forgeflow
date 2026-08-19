@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import {
   BRAND_IMAGE_LQIP,
@@ -17,6 +17,12 @@ import {
  */
 export function BackgroundLayer() {
   const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // A cached image can finish before hydration attaches onLoad.
+  useEffect(() => {
+    if (imgRef.current?.complete) setLoaded(true);
+  }, []);
 
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
@@ -30,6 +36,7 @@ export function BackgroundLayer() {
         }}
       />
       <img
+        ref={imgRef}
         src={BRAND_IMAGE_SRC}
         srcSet={BRAND_IMAGE_SRCSET}
         sizes={BRAND_IMAGE_SIZES}

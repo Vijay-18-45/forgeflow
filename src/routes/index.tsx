@@ -38,8 +38,9 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: BRAND_IMAGE,
+        href: BRAND_IMAGE_SRC,
         imagesrcset: BRAND_IMAGE_SRCSET,
+  BRAND_IMAGE_SRC,
         imagesizes: BRAND_IMAGE_SIZES,
         fetchpriority: "high",
       },
