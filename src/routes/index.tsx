@@ -13,7 +13,7 @@ import { Team } from "@/components/Team";
 import { CTA } from "@/components/CTA";
 import { HeroProduct } from "@/components/HeroProduct";
 import { Footer } from "@/components/Footer";
-import { BRAND_IMAGE } from "@/data/forgeflowData";
+import { BRAND_IMAGE, BRAND_IMAGE_SIZES, BRAND_IMAGE_SRCSET } from "@/data/forgeflowData";
 
 const title = "ForgeFlow AI — Vertical Intelligence for Real-World Industries";
 const description =
