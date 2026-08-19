@@ -74,9 +74,9 @@ export function Footer() {
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label={label}
-                  className="text-text-muted transition-colors duration-200 hover:text-text-primary"
+                  className="grid h-9 w-9 place-items-center rounded-full text-text-muted transition-colors duration-200 hover:bg-surface hover:text-text-primary active:bg-elevated active:text-electric"
                 >
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-[18px] w-[18px]" />
                 </a>
               ))}
             </div>
