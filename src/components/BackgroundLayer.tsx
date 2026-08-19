@@ -13,7 +13,8 @@ import {
  * Fixed, static (no motion), responsive focal point via CSS media query.
  * Image is served through a long-cache edge route (f_auto/q_auto variants) and
  * fetched with high priority since it is the first paint surface. A 24px
- * inline blurred placeholder covers the frame until the full image decodes.
+ * inline blurred placeholder paints instantly underneath it. The real image is
+ * never hidden behind JS/opacity state so it stays an immediate LCP candidate.
  */
 export function BackgroundLayer() {
   const [loaded, setLoaded] = useState(false);
@@ -27,7 +28,7 @@ export function BackgroundLayer() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
       <div
-        className="absolute inset-0 scale-105 blur-2xl transition-opacity duration-700"
+        className="absolute inset-0 scale-105 blur-2xl transition-opacity duration-300"
         style={{
           backgroundImage: `url("${BRAND_IMAGE_LQIP}")`,
           backgroundSize: "cover",
@@ -46,8 +47,7 @@ export function BackgroundLayer() {
         decoding="async"
         fetchPriority="high"
         onLoad={() => setLoaded(true)}
-        className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] transition-opacity duration-700 lg:object-contain lg:object-center"
-        style={{ opacity: loaded ? 1 : 0 }}
+        className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] lg:object-contain lg:object-center"
       />
       <div
         className="absolute inset-0"

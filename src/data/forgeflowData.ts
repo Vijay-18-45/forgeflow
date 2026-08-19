@@ -4,10 +4,10 @@ const BRAND_IMAGE_PATH = "v1787065753/forgeflow.jpg";
 
 /** Cloudinary-transformed brand image: auto format (AVIF/WebP), auto quality, width-capped. */
 export function brandImageUrl(width: number) {
-  return `${CLOUDINARY_BASE}/f_auto,q_auto:good,c_limit,w_${width}/${BRAND_IMAGE_PATH}`;
+  return `${CLOUDINARY_BASE}/f_auto,q_auto:eco,c_limit,w_${width}/${BRAND_IMAGE_PATH}`;
 }
 
-export const BRAND_IMAGE_WIDTHS = [640, 960, 1254];
+export const BRAND_IMAGE_WIDTHS = [480, 768, 1024, 1254];
 
 /**
  * Same bytes as `brandImageUrl`, served through our own edge route so the
