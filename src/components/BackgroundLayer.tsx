@@ -1,21 +1,36 @@
+import { useState } from "react";
+
 import {
-  BRAND_IMAGE,
+  BRAND_IMAGE_LQIP,
   BRAND_IMAGE_SIZES,
+  BRAND_IMAGE_SRC,
   BRAND_IMAGE_SRCSET,
 } from "@/data/forgeflowData";
 
 /**
  * Single global atmospheric background.
- * Layer order: Image -> Dark overlay -> Blue/cyan ambient -> Content.
+ * Layer order: LQIP -> Image -> Dark overlay -> Blue/cyan ambient -> Content.
  * Fixed, static (no motion), responsive focal point via CSS media query.
- * Image is served through Cloudinary with auto format/quality + width variants
- * and is fetched with high priority since it is the first paint surface.
+ * Image is served through a long-cache edge route (f_auto/q_auto variants) and
+ * fetched with high priority since it is the first paint surface. A 24px
+ * inline blurred placeholder covers the frame until the full image decodes.
  */
 export function BackgroundLayer() {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
+      <div
+        className="absolute inset-0 scale-105 blur-2xl transition-opacity duration-700"
+        style={{
+          backgroundImage: `url("${BRAND_IMAGE_LQIP}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "55% center",
+          opacity: loaded ? 0 : 1,
+        }}
+      />
       <img
-        src={BRAND_IMAGE}
+        src={BRAND_IMAGE_SRC}
         srcSet={BRAND_IMAGE_SRCSET}
         sizes={BRAND_IMAGE_SIZES}
         alt=""
@@ -23,7 +38,9 @@ export function BackgroundLayer() {
         height={1254}
         decoding="async"
         fetchPriority="high"
-        className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] lg:object-contain lg:object-center"
+        onLoad={() => setLoaded(true)}
+        className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] transition-opacity duration-700 lg:object-contain lg:object-center"
+        style={{ opacity: loaded ? 1 : 0 }}
       />
       <div
         className="absolute inset-0"
