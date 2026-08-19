@@ -12,33 +12,16 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+// Add the real ForgeFlow AI profile URLs here to show each icon.
+// Leave a value empty ("") and that icon stays hidden — no placeholder links.
 const socialLinks = [
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com",
-    icon: Linkedin,
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com",
-    icon: Instagram,
-  },
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com",
-    icon: Facebook,
-  },
-  {
-    label: "Twitter",
-    href: "https://www.twitter.com",
-    icon: Twitter,
-  },
-  {
-    label: "WhatsApp",
-    href: "https://wa.me/",
-    icon: WhatsAppIcon,
-  },
-];
+  { label: "LinkedIn", href: "", icon: Linkedin },
+  { label: "Instagram", href: "", icon: Instagram },
+  { label: "Facebook", href: "", icon: Facebook },
+  { label: "Twitter", href: "", icon: Twitter },
+  { label: "WhatsApp", href: "", icon: WhatsAppIcon },
+].filter((s) => s.href.length > 0);
+
 
 export function Footer() {
   return (
