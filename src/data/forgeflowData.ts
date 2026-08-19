@@ -33,7 +33,7 @@ export const BRAND_IMAGE_SIZES = "(min-width: 1024px) 100vh, 100vw";
 export const BRAND_IMAGE = brandImageUrl(1254);
 
 /** Cached in-app source for the background <img>. */
-export const BRAND_IMAGE_SRC = brandImageCachedUrl(1254);
+export const BRAND_IMAGE_SRC = brandImageCachedUrl(1024);
 
 
 export const navLinks = [
