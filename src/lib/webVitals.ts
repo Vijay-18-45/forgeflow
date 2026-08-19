@@ -11,8 +11,8 @@ export type Vitals = {
   ttfb?: number;
   fcp?: number;
   lcp?: number;
-  lcpElement?: string;
-  lcpUrl?: string;
+  lcpElement?: string | undefined;
+  lcpUrl?: string | undefined;
   cls?: number;
 };
 
