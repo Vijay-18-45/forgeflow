@@ -12,7 +12,7 @@ import { createFileRoute } from "@tanstack/react-router";
 const CLOUDINARY_ORIGIN = "https://res.cloudinary.com";
 const IMAGE_PATH = "/prfxdvsk/image/upload";
 const ASSET = "v1787065753/forgeflow.jpg";
-const ALLOWED_WIDTHS = new Set([640, 960, 1254]);
+const ALLOWED_WIDTHS = new Set([480, 768, 1024, 1254]);
 
 export const Route = createFileRoute("/api/public/bg-image")({
   server: {
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/api/public/bg-image")({
           return new Response("Unsupported width", { status: 400 });
         }
 
-        const upstream = `${CLOUDINARY_ORIGIN}${IMAGE_PATH}/f_auto,q_auto:good,c_limit,w_${width}/${ASSET}`;
+        const upstream = `${CLOUDINARY_ORIGIN}${IMAGE_PATH}/f_auto,q_auto:eco,c_limit,w_${width}/${ASSET}`;
         const res = await fetch(upstream, {
           headers: {
             Accept: request.headers.get("accept") ?? "image/avif,image/webp,image/*",
