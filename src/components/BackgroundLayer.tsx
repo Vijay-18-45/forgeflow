@@ -1,44 +1,21 @@
-import { useEffect, useRef, useState } from "react";
-
 import {
-  BRAND_IMAGE_LQIP,
+  BRAND_IMAGE,
   BRAND_IMAGE_SIZES,
-  BRAND_IMAGE_SRC,
   BRAND_IMAGE_SRCSET,
 } from "@/data/forgeflowData";
 
 /**
  * Single global atmospheric background.
- * Layer order: LQIP -> Image -> Dark overlay -> Blue/cyan ambient -> Content.
+ * Layer order: Image -> Dark overlay -> Blue/cyan ambient -> Content.
  * Fixed, static (no motion), responsive focal point via CSS media query.
- * Image is served through a long-cache edge route (f_auto/q_auto variants) and
- * fetched with high priority since it is the first paint surface. A 24px
- * inline blurred placeholder paints instantly underneath it. The real image is
- * never hidden behind JS/opacity state so it stays an immediate LCP candidate.
+ * Image is served through Cloudinary with auto format/quality + width variants
+ * and is fetched with high priority since it is the first paint surface.
  */
 export function BackgroundLayer() {
-  const [loaded, setLoaded] = useState(false);
-  const imgRef = useRef<HTMLImageElement>(null);
-
-  // A cached image can finish before hydration attaches onLoad.
-  useEffect(() => {
-    if (imgRef.current?.complete) setLoaded(true);
-  }, []);
-
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 bg-forge-black">
-      <div
-        className="absolute inset-0 scale-105 blur-2xl transition-opacity duration-300"
-        style={{
-          backgroundImage: `url("${BRAND_IMAGE_LQIP}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "55% center",
-          opacity: loaded ? 0 : 1,
-        }}
-      />
       <img
-        ref={imgRef}
-        src={BRAND_IMAGE_SRC}
+        src={BRAND_IMAGE}
         srcSet={BRAND_IMAGE_SRCSET}
         sizes={BRAND_IMAGE_SIZES}
         alt=""
@@ -46,7 +23,6 @@ export function BackgroundLayer() {
         height={1254}
         decoding="async"
         fetchPriority="high"
-        onLoad={() => setLoaded(true)}
         className="forge-bg absolute inset-0 h-full w-full object-cover object-[55%_center] lg:object-contain lg:object-center"
       />
       <div

@@ -4,36 +4,20 @@ const BRAND_IMAGE_PATH = "v1787065753/forgeflow.jpg";
 
 /** Cloudinary-transformed brand image: auto format (AVIF/WebP), auto quality, width-capped. */
 export function brandImageUrl(width: number) {
-  return `${CLOUDINARY_BASE}/f_auto,q_auto:eco,c_limit,w_${width}/${BRAND_IMAGE_PATH}`;
+  return `${CLOUDINARY_BASE}/f_auto,q_auto:good,c_limit,w_${width}/${BRAND_IMAGE_PATH}`;
 }
 
-export const BRAND_IMAGE_WIDTHS = [480, 768, 1024, 1254];
-
-/**
- * Same bytes as `brandImageUrl`, served through our own edge route so the
- * response carries `public, max-age=31536000, immutable` (Cloudinary marks its
- * versioned assets `private`, which blocks shared/CDN caching).
- */
-export function brandImageCachedUrl(width: number) {
-  return `/api/public/bg-image?w=${width}`;
-}
+export const BRAND_IMAGE_WIDTHS = [640, 960, 1254];
 
 export const BRAND_IMAGE_SRCSET = BRAND_IMAGE_WIDTHS.map(
-  (w) => `${brandImageCachedUrl(w)} ${w}w`,
+  (w) => `${brandImageUrl(w)} ${w}w`,
 ).join(", ");
-
-/** Inline 24px blurred LQIP placeholder shown until the full image decodes. */
-export const BRAND_IMAGE_LQIP =
-  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAYABgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AzYKqIAAAAAD/2Q==";
 
 /** Sizes: mobile covers the viewport, desktop is letterboxed to viewport height. */
 export const BRAND_IMAGE_SIZES = "(min-width: 1024px) 100vh, 100vw";
 
-/** Default / social-preview URL (absolute, for crawlers). */
+/** Default / social-preview URL. */
 export const BRAND_IMAGE = brandImageUrl(1254);
-
-/** Cached in-app source for the background <img>. */
-export const BRAND_IMAGE_SRC = brandImageCachedUrl(1024);
 
 
 export const navLinks = [

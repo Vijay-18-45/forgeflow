@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as StudyAbroadConsultancySoftwareRouteImport } from './routes/study-abroad-consultancy-software'
-import { Route as ApiPublicBgImageRouteImport } from './routes/api/public/bg-image'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -30,57 +29,35 @@ const StudyAbroadConsultancySoftwareRoute =
     path: '/study-abroad-consultancy-software',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ApiPublicBgImageRoute = ApiPublicBgImageRouteImport.update({
-  id: '/api/public/bg-image',
-  path: '/api/public/bg-image',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/study-abroad-consultancy-software': typeof StudyAbroadConsultancySoftwareRoute
-  '/api/public/bg-image': typeof ApiPublicBgImageRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/study-abroad-consultancy-software': typeof StudyAbroadConsultancySoftwareRoute
-  '/api/public/bg-image': typeof ApiPublicBgImageRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/study-abroad-consultancy-software': typeof StudyAbroadConsultancySoftwareRoute
-  '/api/public/bg-image': typeof ApiPublicBgImageRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/sitemap.xml'
-    | '/study-abroad-consultancy-software'
-    | '/api/public/bg-image'
+  fullPaths: '/' | '/sitemap.xml' | '/study-abroad-consultancy-software'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/sitemap.xml'
-    | '/study-abroad-consultancy-software'
-    | '/api/public/bg-image'
-  id:
-    | '__root__'
-    | '/'
-    | '/sitemap.xml'
-    | '/study-abroad-consultancy-software'
-    | '/api/public/bg-image'
+  to: '/' | '/sitemap.xml' | '/study-abroad-consultancy-software'
+  id: '__root__' | '/' | '/sitemap.xml' | '/study-abroad-consultancy-software'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   StudyAbroadConsultancySoftwareRoute: typeof StudyAbroadConsultancySoftwareRoute
-  ApiPublicBgImageRoute: typeof ApiPublicBgImageRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -106,13 +83,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StudyAbroadConsultancySoftwareRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/bg-image': {
-      id: '/api/public/bg-image'
-      path: '/api/public/bg-image'
-      fullPath: '/api/public/bg-image'
-      preLoaderRoute: typeof ApiPublicBgImageRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -120,7 +90,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   StudyAbroadConsultancySoftwareRoute: StudyAbroadConsultancySoftwareRoute,
-  ApiPublicBgImageRoute: ApiPublicBgImageRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
