@@ -1,6 +1,6 @@
 const CLOUDINARY_BASE =
-  "https://res.cloudinary.com/prfxdvsk/image/upload";
-const BRAND_IMAGE_PATH = "v1787065753/forgeflow.jpg";
+  "https://res.cloudinary.com/lvgtzzgl/image/upload";
+const BRAND_IMAGE_PATH = "v1787301586/forzeflow.jpg";
 
 /** Cloudinary-transformed brand image: auto format (AVIF/WebP), auto quality, width-capped. */
 export function brandImageUrl(width: number) {
