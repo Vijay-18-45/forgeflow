@@ -6,7 +6,7 @@ export function HeroProduct() {
     <div className="rounded-lg border border-line bg-surface/85 backdrop-blur-md">
       <div className="flex items-center justify-between gap-3 border-b border-line-subtle px-4 py-3">
         <p className="font-mono text-[0.65rem] tracking-[0.14em] text-text-secondary">
-          FORGEFLOW EDU — STUDENT APPLICATION
+          FORZEFLOW EDU — STUDENT APPLICATION
         </p>
         <span className="rounded-sm border border-line px-2 py-1 font-mono text-[0.6rem] tracking-[0.14em] text-text-muted">
           PRODUCT CONCEPT

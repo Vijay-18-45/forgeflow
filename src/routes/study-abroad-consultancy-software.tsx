@@ -10,9 +10,9 @@ import { Footer } from "@/components/Footer";
 import { Section } from "@/components/Section";
 
 const url = "https://forgeflows.lovable.app/study-abroad-consultancy-software";
-const title = "Study Abroad Consultancy Software — ForgeFlow EDU";
+const title = "Study Abroad Consultancy Software — ForzeFlow EDU";
 const description =
-  "ForgeFlow EDU is intelligent operating software for study-abroad consultancies: student profiles, eligibility, AI university matching, documents and follow-ups in one workflow.";
+  "ForzeFlow EDU is intelligent operating software for study-abroad consultancies: student profiles, eligibility, AI university matching, documents and follow-ups in one workflow.";
 
 export const Route = createFileRoute("/study-abroad-consultancy-software")({
   head: () => ({
@@ -32,11 +32,11 @@ export const Route = createFileRoute("/study-abroad-consultancy-software")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          name: "ForgeFlow EDU",
+          name: "ForzeFlow EDU",
           applicationCategory: "BusinessApplication",
           description,
           url,
-          publisher: { "@type": "Organization", name: "ForgeFlow AI" },
+          publisher: { "@type": "Organization", name: "ForzeFlow AI" },
         }),
       },
     ],
@@ -101,12 +101,12 @@ function StudyAbroadPage() {
           <div className="mx-auto max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pb-28 sm:pt-40">
             <div className="grid items-center gap-14 lg:grid-cols-[1fr_0.95fr]">
               <div className="rise">
-                <p className="label-mono">ForgeFlow EDU</p>
+                <p className="label-mono">ForzeFlow EDU</p>
                 <h1 className="mt-5 max-w-xl text-4xl font-medium leading-[1.1] sm:text-5xl">
                   Study abroad consultancy software, built around your workflow.
                 </h1>
                 <p className="mt-6 max-w-lg text-base leading-relaxed text-text-body sm:text-lg">
-                  ForgeFlow EDU is an intelligent operating layer for study-abroad consultancies —
+                  ForzeFlow EDU is an intelligent operating layer for study-abroad consultancies —
                   from first enquiry to visa follow-up, in one structured system.
                 </p>
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -114,7 +114,7 @@ function StudyAbroadPage() {
                     href="#contact"
                     className="rounded-md bg-gradient-brand px-5 py-3 text-center text-sm font-medium text-primary-foreground transition-opacity duration-300 hover:opacity-90"
                   >
-                    Talk to ForgeFlow
+                    Talk to ForzeFlow
                   </a>
                   <Link
                     to="/"
@@ -124,7 +124,7 @@ function StudyAbroadPage() {
                   </Link>
                 </div>
                 <p className="mt-8 text-xs text-text-muted">
-                  ForgeFlow EDU is in active development. Screens on this page are product concepts
+                  ForzeFlow EDU is in active development. Screens on this page are product concepts
                   with demo data.
                 </p>
               </div>
@@ -149,7 +149,7 @@ function StudyAbroadPage() {
 
         <Section>
           <h2 className="max-w-2xl text-3xl font-medium sm:text-4xl">
-            What ForgeFlow EDU handles.
+            What ForzeFlow EDU handles.
           </h2>
           <div className="mt-12 grid gap-px bg-line-subtle sm:grid-cols-2 lg:grid-cols-3">
             {capabilities.map((c) => (

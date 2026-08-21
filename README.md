@@ -1,13 +1,13 @@
-# ForgeFlow Studio
+# ForzeFlow Studio
 
-# FORGEFLOW AI — MASTER BUILD PROMPT
+# FORZEFLOW AI — MASTER BUILD PROMPT
 
 
 
 
 ## ROLE
 
-Act as a world-class Product Designer, Brand Designer, Motion Designer, and Senior React Frontend Engineer. Build the official **ForgeFlow AI** website: a premium, calm, product-first digital experience.
+Act as a world-class Product Designer, Brand Designer, Motion Designer, and Senior React Frontend Engineer. Build the official **ForzeFlow AI** website: a premium, calm, product-first digital experience.
 
 
 
@@ -34,7 +34,7 @@ Act as a world-class Product Designer, Brand Designer, Motion Designer, and Seni
 
 
 
-Treat this as a **responsive atmospheric background layer**, not a content image — the environment the ForgeFlow interface lives in.
+Treat this as a **responsive atmospheric background layer**, not a content image — the environment the ForzeFlow interface lives in.
 
 
 
@@ -125,7 +125,7 @@ linear-gradient(135deg, #024FE5 0%, #0271F2 35%, #03A7F5 70%, #03D0F0 100%);
 
 ### Navbar
 
-`FORGEFLOW AI` · Platform · Verticals · Approach · About · **Talk to us**
+`FORZEFLOW AI` · Platform · Verticals · Approach · About · **Talk to us**
 
 Transparent/minimal at top → dark translucent + blur + thin border on scroll. Keep it minimal, never bulky.
 
@@ -134,19 +134,19 @@ Transparent/minimal at top → dark translucent + blur + thin border on scroll. 
 
 ### Hero
 
-- Eyebrow: `FORGEFLOW AI`
+- Eyebrow: `FORZEFLOW AI`
 
 - Headline: **Intelligence built for your industry.**
 
 - Subcopy: *We build AI-native software around complex industry workflows — starting with education.*
 
-- CTAs: **Explore ForgeFlow EDU** (primary) / **Talk to ForgeFlow** (secondary)
+- CTAs: **Explore ForzeFlow EDU** (primary) / **Talk to ForzeFlow** (secondary)
 
 - Process line: `Understand → Structure → Intelligence → Integrate → Improve`
 
 - Background image prominent here, with overlay + subtle blue/cyan lighting; no unrelated hero illustration.
 
-- Include a conceptual ForgeFlow EDU dashboard visual (see §Product Concept), clearly labeled **PRODUCT CONCEPT**. Leave visible background around cards — don't cover the image entirely.
+- Include a conceptual ForzeFlow EDU dashboard visual (see §Product Concept), clearly labeled **PRODUCT CONCEPT**. Leave visible background around cards — don't cover the image entirely.
 
 
 
@@ -166,16 +166,16 @@ Three principles: **01 Understand** → **02 Structure** → **03 Intelligence**
 
 Heading: **Built vertically.** / *We go deep before we go wide.*
 
-- **Education — ForgeFlow EDU** — *Intelligent operating software for study-abroad consultancies.* Status: **BUILDING** (strongest visual emphasis)
+- **Education — ForzeFlow EDU** — *Intelligent operating software for study-abroad consultancies.* Status: **BUILDING** (strongest visual emphasis)
 
 - Healthcare / Semiconductor / Financial Services / Logistics — Status: **EXPLORING** (visually muted)
 
 
 
 
-### ForgeFlow EDU (First Vertical)
+### ForzeFlow EDU (First Vertical)
 
-Label: `FIRST VERTICAL` · Heading: **ForgeFlow EDU** · *An intelligent operating layer for study-abroad consultancies.*
+Label: `FIRST VERTICAL` · Heading: **ForzeFlow EDU** · *An intelligent operating layer for study-abroad consultancies.*
 
 
 
@@ -193,7 +193,7 @@ Inactive `#12304A` · Active `#0271F2` · Intelligence `#03C4F6` · Highlight `#
 
 ```
 
-FORGEFLOW EDU — Student Application     [PRODUCT CONCEPT]
+FORZEFLOW EDU — Student Application     [PRODUCT CONCEPT]
 
 
 
@@ -264,7 +264,7 @@ Heading: **Depth beats breadth.**
 
 Generic path: `Many industries → Generic workflows → Generic features`
 
-ForgeFlow path: `One industry → Deep workflow knowledge → Industry-specific product → Better outcomes`
+ForzeFlow path: `One industry → Deep workflow knowledge → Industry-specific product → Better outcomes`
 
 
 
@@ -295,7 +295,7 @@ Heading: **Have a workflow worth rebuilding?**
 
 Copy: *Tell us where your team spends time, makes decisions, or loses information. We'll start there.*
 
-CTAs: **Talk to ForgeFlow** / **Explore our approach** — ForgeFlow image subtly reintroduced behind, sufficiently darkened.
+CTAs: **Talk to ForzeFlow** / **Explore our approach** — ForzeFlow image subtly reintroduced behind, sufficiently darkened.
 
 
 
@@ -304,7 +304,7 @@ CTAs: **Talk to ForgeFlow** / **Explore our approach** — ForgeFlow image subtl
 
 Background `#000000`, border `#12304A`.
 
-`FORGEFLOW AI` · *Vertical intelligence for real-world industries.* · Platform / Verticals / Approach / About / Contact · LinkedIn · Instagram · © 2026 ForgeFlow AI. All rights reserved.
+`FORZEFLOW AI` · *Vertical intelligence for real-world industries.* · Platform / Verticals / Approach / About / Contact · LinkedIn · Instagram · © 2026 ForzeFlow AI. All rights reserved.
 
 
 
@@ -353,7 +353,7 @@ Respect `prefers-reduced-motion: reduce` — strip non-essential animation, keep
 
 - Full atmospheric composition on desktop/laptop; preserved readability on tablet; responsive cropping on mobile (adjust `background-position` as needed, never distort).
 
-- Mobile: hamburger nav (`FORGEFLOW AI ☰`), vertical workflow, stacked dashboard, full-width but not oversized cards, darker background overlay for readability. No horizontal overflow, clipped text, tiny touch targets, or hover-only interactions.
+- Mobile: hamburger nav (`FORZEFLOW AI ☰`), vertical workflow, stacked dashboard, full-width but not oversized cards, darker background overlay for readability. No horizontal overflow, clipped text, tiny touch targets, or hover-only interactions.
 
 - Semantic HTML, correct heading hierarchy, keyboard navigation, visible focus states, accessible buttons/mobile menu, sufficient contrast.
 
@@ -444,9 +444,9 @@ Never invent customers, testimonials, funding, partnerships, revenue, awards, re
 
 
 
-- Title: *ForgeFlow AI — Vertical Intelligence for Real-World Industries*
+- Title: *ForzeFlow AI — Vertical Intelligence for Real-World Industries*
 
-- Description: *ForgeFlow AI builds intelligent software around complex industry workflows, starting with education.*
+- Description: *ForzeFlow AI builds intelligent software around complex industry workflows, starting with education.*
 
 - Semantic HTML, metadata, Open Graph tags, favicon, descriptive alt text.
 
@@ -469,7 +469,7 @@ Never invent customers, testimonials, funding, partnerships, revenue, awards, re
 
 3. **Positioning** — generic AI section → principles → verticals
 
-4. **Core Product** — ForgeFlow EDU → workflow → dashboard
+4. **Core Product** — ForzeFlow EDU → workflow → dashboard
 
 5. **Narrative** — approach → why vertical → future → team
 
@@ -500,9 +500,9 @@ Never invent customers, testimonials, funding, partnerships, revenue, awards, re
 
 - [ ] Animations are subtle enough to go unnoticed individually
 
-- [ ] ForgeFlow EDU dashboard reads as real software, not a mockup screenshot
+- [ ] ForzeFlow EDU dashboard reads as real software, not a mockup screenshot
 
-- [ ] A first-time visitor understands what ForgeFlow does within seconds
+- [ ] A first-time visitor understands what ForzeFlow does within seconds
 
 - [ ] Passes the Calm Test (§4) and Reduced Motion (§5)
 

@@ -27,7 +27,7 @@ export function ProductDashboard() {
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line-subtle px-4 py-3">
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
           <span className="font-mono text-[0.65rem] tracking-[0.16em] text-text-secondary">
-            FORGEFLOW EDU
+            FORZEFLOW EDU
           </span>
           {navItems.map((n, i) => (
             <span
@@ -54,7 +54,7 @@ export function ProductDashboard() {
 
       <div
         role="tablist"
-        aria-label="ForgeFlow EDU modules"
+        aria-label="ForzeFlow EDU modules"
         className="flex flex-wrap gap-1 border-y border-line-subtle bg-forge-black/40 px-2 py-2"
       >
         {tabs.map((t) => {

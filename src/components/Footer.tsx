@@ -45,7 +45,7 @@ export function Footer() {
     <footer className="relative border-t border-line bg-forge-black">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-14 sm:px-8 md:flex-row md:justify-between">
         <div>
-          <p className="font-display text-sm tracking-[0.22em] text-text-primary">FORGEFLOW AI</p>
+          <p className="font-display text-sm tracking-[0.22em] text-text-primary">FORZEFLOW AI</p>
           <p className="mt-3 max-w-xs text-sm text-text-muted">
             Vertical intelligence for real-world industries.
           </p>
@@ -85,7 +85,7 @@ export function Footer() {
       </div>
       <div className="border-t border-line-subtle">
         <p className="mx-auto max-w-6xl px-5 py-6 text-xs text-text-muted sm:px-8">
-          © 2026 ForgeFlow AI. All rights reserved.
+          © 2026 ForzeFlow AI. All rights reserved.
         </p>
       </div>
     </footer>

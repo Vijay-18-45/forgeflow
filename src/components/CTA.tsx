@@ -24,7 +24,7 @@ export function CTA() {
             href="mailto:hello@forgeflow.ai"
             className="rounded-md bg-gradient-brand px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity duration-300 hover:opacity-90"
           >
-            Talk to ForgeFlow
+            Talk to ForzeFlow
           </a>
           <a
             href="#approach"
@@ -37,7 +37,7 @@ export function CTA() {
           href="https://www.linkedin.com"
           target="_blank"
           rel="noreferrer noopener"
-          aria-label="ForgeFlow AI on LinkedIn"
+          aria-label="ForzeFlow AI on LinkedIn"
           className="mx-auto mt-8 inline-flex items-center gap-2 text-sm text-text-muted transition-colors hover:text-text-primary"
         >
           <Linkedin className="h-5 w-5" />
