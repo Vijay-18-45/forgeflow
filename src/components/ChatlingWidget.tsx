@@ -25,7 +25,7 @@ export function ChatlingWidget() {
     script.id = SCRIPT_ID;
     script.type = "text/javascript";
     script.async = true;
-    script.dataset.id = CHATBOT_ID;
+    script.setAttribute("data-id", CHATBOT_ID);
     script.src = SCRIPT_SRC;
     // Failing to load must never surface an error to the user.
     script.onerror = () => {};
