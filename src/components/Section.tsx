@@ -34,15 +34,12 @@ export function Section({
           }}
         />
       )}
-      <div
-        className={`relative mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28 ${className}`}
-      >
+      <div className={`relative mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28 ${className}`}>
         {children}
       </div>
     </section>
   );
 }
-
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return <p className="label-mono">{children}</p>;

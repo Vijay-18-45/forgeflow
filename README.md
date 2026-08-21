@@ -2,42 +2,21 @@
 
 # FORGEFLOW AI — MASTER BUILD PROMPT
 
-
-
-
 ## ROLE
 
 Act as a world-class Product Designer, Brand Designer, Motion Designer, and Senior React Frontend Engineer. Build the official **ForgeFlow AI** website: a premium, calm, product-first digital experience.
-
-
-
 
 **Feel:** Calm. Precise. Intelligent. Premium. Technical.
 
 **Test:** Users should want to stay because the site feels comfortable and well-designed — not because it demands attention.
 
-
-
-
 ---
-
-
-
 
 ## 1. BRAND IMAGE & BACKGROUND SYSTEM
 
-
-
-
 **Asset:** `https://res.cloudinary.com/prfxdvsk/image/upload/v1787065753/forgeflow.jpg`
 
-
-
-
 Treat this as a **responsive atmospheric background layer**, not a content image — the environment the ForgeFlow interface lives in.
-
-
-
 
 **Rules:**
 
@@ -63,39 +42,21 @@ Treat this as a **responsive atmospheric background layer**, not a content image
 
 - Optimize loading: no duplicate downloads, don't block initial render, cache appropriately.
 
-
-
-
 ---
 
-
-
-
 ## 2. COLOR SYSTEM
-
-
-
 
 **Primary**
 
 `Forge Black #000000` · `Forge Surface #080B12` · `Deep Blue #024FE5` · `Primary Blue #0271F2` · `Electric Blue #038CF4` · `Bright Blue #03A7F5` · `Cyan #03C4F6` · `Bright Cyan #03D0F0`
 
-
-
-
 **Text**
 
 `Primary White #F0F0F0` · `Secondary #D9E1EA` · `Body #A7B0C0` · `Muted #6F7B8C`
 
-
-
-
 **UI**
 
 `Border #12304A` · `Subtle Border #0D2032` · `Hover Surface #0C1420` · `Elevated Surface #0A1018`
-
-
-
 
 **Brand gradient** (use sparingly — CTAs, highlights, active states, intelligent actions, progress indicators only):
 
@@ -105,23 +66,11 @@ linear-gradient(135deg, #024FE5 0%, #0271F2 35%, #03A7F5 70%, #03D0F0 100%);
 
 ```
 
-
-
-
-**Balance:** Dark/image atmosphere 70–80% · Neutral text 10–15% · Blue/cyan accents 5–10%. Blue/cyan signals *action + intelligence*, not decoration.
-
-
-
+**Balance:** Dark/image atmosphere 70–80% · Neutral text 10–15% · Blue/cyan accents 5–10%. Blue/cyan signals _action + intelligence_, not decoration.
 
 ---
 
-
-
-
 ## 3. PAGE STRUCTURE & CONTENT
-
-
-
 
 ### Navbar
 
@@ -129,16 +78,13 @@ linear-gradient(135deg, #024FE5 0%, #0271F2 35%, #03A7F5 70%, #03D0F0 100%);
 
 Transparent/minimal at top → dark translucent + blur + thin border on scroll. Keep it minimal, never bulky.
 
-
-
-
 ### Hero
 
 - Eyebrow: `FORGEFLOW AI`
 
 - Headline: **Intelligence built for your industry.**
 
-- Subcopy: *We build AI-native software around complex industry workflows — starting with education.*
+- Subcopy: _We build AI-native software around complex industry workflows — starting with education._
 
 - CTAs: **Explore ForgeFlow EDU** (primary) / **Talk to ForgeFlow** (secondary)
 
@@ -148,46 +94,31 @@ Transparent/minimal at top → dark translucent + blur + thin border on scroll. 
 
 - Include a conceptual ForgeFlow EDU dashboard visual (see §Product Concept), clearly labeled **PRODUCT CONCEPT**. Leave visible background around cards — don't cover the image entirely.
 
-
-
-
 ### Generic AI Isn't Enough
 
 Heading: **Generic AI isn't enough.**
 
-Copy: *Every industry has its own language, processes, constraints and decisions. We build around those realities instead of forcing businesses into generic software.*
+Copy: _Every industry has its own language, processes, constraints and decisions. We build around those realities instead of forcing businesses into generic software._
 
 Three principles: **01 Understand** → **02 Structure** → **03 Intelligence** (short descriptions). Use typography/dividers, not heavy cards.
 
-
-
-
 ### Verticals
 
-Heading: **Built vertically.** / *We go deep before we go wide.*
+Heading: **Built vertically.** / _We go deep before we go wide._
 
-- **Education — ForgeFlow EDU** — *Intelligent operating software for study-abroad consultancies.* Status: **BUILDING** (strongest visual emphasis)
+- **Education — ForgeFlow EDU** — _Intelligent operating software for study-abroad consultancies._ Status: **BUILDING** (strongest visual emphasis)
 
 - Healthcare / Semiconductor / Financial Services / Logistics — Status: **EXPLORING** (visually muted)
 
-
-
-
 ### ForgeFlow EDU (First Vertical)
 
-Label: `FIRST VERTICAL` · Heading: **ForgeFlow EDU** · *An intelligent operating layer for study-abroad consultancies.*
-
-
-
+Label: `FIRST VERTICAL` · Heading: **ForgeFlow EDU** · _An intelligent operating layer for study-abroad consultancies._
 
 **Workflow:**
 
 `LEAD → STUDENT PROFILE → ELIGIBILITY → UNIVERSITY MATCHING → DOCUMENTS → APPLICATION → FOLLOW-UP`
 
 Inactive `#12304A` · Active `#0271F2` · Intelligence `#03C4F6` · Highlight `#03D0F0`. Subtle connectors — no glow, no neon tubes.
-
-
-
 
 **Product Concept (demo dashboard):**
 
@@ -235,17 +166,11 @@ NEXT ACTION: Schedule counsellor review
 
 Colors: `#080B12 #0A1018 #12304A #0271F2 #03C4F6 #F0F0F0`
 
-
-
-
 **Full Dashboard:** Nav — Overview / Students / Applications / Documents / Follow-ups.
 
 Metrics (label **DEMO DATA**): Students 1,284 · Applications 426 · Documents 3,891 · Follow-ups 127.
 
 Interactive tabs (Students, Applications, Documents, Follow-ups, University Matching) with calm state transitions — no heavy animation.
-
-
-
 
 ### Our Approach
 
@@ -255,9 +180,6 @@ Heading: **We don't start with AI.**
 
 Visual: `Problem → Workflow → Product → Intelligence → Outcome`
 
-
-
-
 ### Why Vertical
 
 Heading: **Depth beats breadth.**
@@ -266,19 +188,13 @@ Generic path: `Many industries → Generic workflows → Generic features`
 
 ForgeFlow path: `One industry → Deep workflow knowledge → Industry-specific product → Better outcomes`
 
-
-
-
 ### Future Vision
 
 Heading: **One vertical at a time.**
 
 List (muted styling): Education · Healthcare · Semiconductors · Financial Services · Logistics
 
-Copy: *We will only enter a new vertical after earning the right through customer understanding and product-market validation.*
-
-
-
+Copy: _We will only enter a new vertical after earning the right through customer understanding and product-market validation._
 
 ### Team
 
@@ -286,70 +202,37 @@ Heading: **Built by people who care about the workflow.**
 
 Roles only, minimal: Founder / Product & AI · CTO / Full-Stack Engineering · Growth / Marketing & Distribution
 
-
-
-
 ### Final CTA
 
 Heading: **Have a workflow worth rebuilding?**
 
-Copy: *Tell us where your team spends time, makes decisions, or loses information. We'll start there.*
+Copy: _Tell us where your team spends time, makes decisions, or loses information. We'll start there._
 
 CTAs: **Talk to ForgeFlow** / **Explore our approach** — ForgeFlow image subtly reintroduced behind, sufficiently darkened.
-
-
-
 
 ### Footer
 
 Background `#000000`, border `#12304A`.
 
-`FORGEFLOW AI` · *Vertical intelligence for real-world industries.* · Platform / Verticals / Approach / About / Contact · LinkedIn · Instagram · © 2026 ForgeFlow AI. All rights reserved.
-
-
-
+`FORGEFLOW AI` · _Vertical intelligence for real-world industries._ · Platform / Verticals / Approach / About / Contact · LinkedIn · Instagram · © 2026 ForgeFlow AI. All rights reserved.
 
 ---
 
-
-
-
 ## 4. ANIMATION PHILOSOPHY
-
-
-
 
 **Use:** fade, tiny translation, subtle opacity shifts, gentle hover, smooth state changes.
 
 **Avoid:** particles, cursor tracking, spinning 3D, aggressive parallax, scroll hijacking, excessive gradients, constant motion, bouncing, giant transitions.
 
-
-
-
 Background image stays visually stable — no continuous zoom/rotation/distortion; any motion must be extremely slow, subtle, low amplitude.
 
-
-
-
-**Calm Test:** Disable all animation — the site must still look excellent. Enable it — the experience should feel *slightly more alive*, not different. If it only impresses with animation on, fix typography/spacing/composition/color hierarchy/product UI/background treatment instead of adding motion.
-
-
-
+**Calm Test:** Disable all animation — the site must still look excellent. Enable it — the experience should feel _slightly more alive_, not different. If it only impresses with animation on, fix typography/spacing/composition/color hierarchy/product UI/background treatment instead of adding motion.
 
 Respect `prefers-reduced-motion: reduce` — strip non-essential animation, keep background static.
 
-
-
-
 ---
 
-
-
-
 ## 5. RESPONSIVE & ACCESSIBILITY
-
-
-
 
 - Full atmospheric composition on desktop/laptop; preserved readability on tablet; responsive cropping on mobile (adjust `background-position` as needed, never distort).
 
@@ -357,23 +240,11 @@ Respect `prefers-reduced-motion: reduce` — strip non-essential animation, keep
 
 - Semantic HTML, correct heading hierarchy, keyboard navigation, visible focus states, accessible buttons/mobile menu, sufficient contrast.
 
-
-
-
 ---
-
-
-
 
 ## 6. TECHNICAL ARCHITECTURE
 
-
-
-
 **Stack:** React + Vite + Tailwind CSS
-
-
-
 
 ```
 
@@ -411,57 +282,27 @@ src/
 
 ```
 
-
-
-
 Background architecture: `App → Global Background Layer → Overlay Layer → Ambient Accent Layer → Main Content` (single consistent implementation, not per-section duplication).
 
-
-
-
 ---
-
-
-
 
 ## 7. CONTENT INTEGRITY
 
-
-
-
 Never invent customers, testimonials, funding, partnerships, revenue, awards, real users, or real student data. Dashboard content is explicitly **DEMO DATA**; unbuilt verticals are explicitly **EXPLORING**.
 
-
-
-
 ---
-
-
-
 
 ## 8. SEO
 
+- Title: _ForgeFlow AI — Vertical Intelligence for Real-World Industries_
 
-
-
-- Title: *ForgeFlow AI — Vertical Intelligence for Real-World Industries*
-
-- Description: *ForgeFlow AI builds intelligent software around complex industry workflows, starting with education.*
+- Description: _ForgeFlow AI builds intelligent software around complex industry workflows, starting with education._
 
 - Semantic HTML, metadata, Open Graph tags, favicon, descriptive alt text.
 
-
-
-
 ---
 
-
-
-
 ## 9. BUILD ORDER
-
-
-
 
 1. **Foundation** — design tokens → background system → typography → navbar
 
@@ -477,18 +318,9 @@ Never invent customers, testimonials, funding, partnerships, revenue, awards, re
 
 7. **QA** — responsive check → accessibility → performance → animation refinement → final build
 
-
-
-
 ---
 
-
-
-
 ## 10. FINAL QA CHECKLIST
-
-
-
 
 - [ ] Background image feels naturally integrated, not slapped on
 
@@ -506,18 +338,9 @@ Never invent customers, testimonials, funding, partnerships, revenue, awards, re
 
 - [ ] Passes the Calm Test (§4) and Reduced Motion (§5)
 
-
-
-
 ---
 
-
-
-
 ## BRAND SYSTEM SUMMARY
-
-
-
 
 ```
 
@@ -527,13 +350,7 @@ Logo → Supplied Image → Black Background → Deep Blue → Electric Blue →
 
 One unified system: **Black as environment. Deep blue as structure. Electric blue as interaction. Cyan as intelligence. White as clarity.**
 
-
-
-
 Experience arc: `See → Understand → Explore → Interact → Trust → Stay → Act` — never `See → Animation → Animation → Confusion`.
-
-
-
 
 **Guiding principles:**
 
