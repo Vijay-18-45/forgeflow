@@ -42,7 +42,7 @@ export function WhyVertical() {
       <h2 className="text-3xl font-medium sm:text-4xl">Depth beats breadth.</h2>
       <div className="mt-12 grid gap-5 md:grid-cols-2">
         <Path title="Generic path" steps={genericPath} />
-        <Path title="ForgeFlow path" steps={forgePath} emphasis />
+        <Path title="ForzeFlow path" steps={forgePath} emphasis />
       </div>
     </Section>
   );
