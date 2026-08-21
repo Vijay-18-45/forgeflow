@@ -1,15 +1,7 @@
 import { genericPath, forgePath } from "@/data/forgeflowData";
 import { Section } from "./Section";
 
-function Path({
-  title,
-  steps,
-  emphasis,
-}: {
-  title: string;
-  steps: string[];
-  emphasis?: boolean;
-}) {
+function Path({ title, steps, emphasis }: { title: string; steps: string[]; emphasis?: boolean }) {
   return (
     <div
       className={`rounded-lg border p-6 ${

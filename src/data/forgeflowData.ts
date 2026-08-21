@@ -1,5 +1,4 @@
-const CLOUDINARY_BASE =
-  "https://res.cloudinary.com/prfxdvsk/image/upload";
+const CLOUDINARY_BASE = "https://res.cloudinary.com/prfxdvsk/image/upload";
 const BRAND_IMAGE_PATH = "v1787065753/forgeflow.jpg";
 
 /** Cloudinary-transformed brand image: auto format (AVIF/WebP), auto quality, width-capped. */
@@ -9,16 +8,15 @@ export function brandImageUrl(width: number) {
 
 export const BRAND_IMAGE_WIDTHS = [640, 960, 1254];
 
-export const BRAND_IMAGE_SRCSET = BRAND_IMAGE_WIDTHS.map(
-  (w) => `${brandImageUrl(w)} ${w}w`,
-).join(", ");
+export const BRAND_IMAGE_SRCSET = BRAND_IMAGE_WIDTHS.map((w) => `${brandImageUrl(w)} ${w}w`).join(
+  ", ",
+);
 
 /** Sizes: mobile covers the viewport, desktop is letterboxed to viewport height. */
 export const BRAND_IMAGE_SIZES = "(min-width: 1024px) 100vh, 100vw";
 
 /** Default / social-preview URL. */
 export const BRAND_IMAGE = brandImageUrl(1254);
-
 
 export const navLinks = [
   { label: "Platform", href: "#platform" },
@@ -27,13 +25,7 @@ export const navLinks = [
   { label: "About", href: "#about" },
 ];
 
-export const processSteps = [
-  "Understand",
-  "Structure",
-  "Intelligence",
-  "Integrate",
-  "Improve",
-];
+export const processSteps = ["Understand", "Structure", "Intelligence", "Integrate", "Improve"];
 
 export const principles = [
   {
@@ -60,10 +52,30 @@ export const verticals = [
     description: "Intelligent operating software for study-abroad consultancies.",
     status: "BUILDING" as const,
   },
-  { name: "Healthcare", product: null, description: "Clinical and administrative workflows.", status: "EXPLORING" as const },
-  { name: "Semiconductor", product: null, description: "Design, fabrication and supply coordination.", status: "EXPLORING" as const },
-  { name: "Financial Services", product: null, description: "Compliance-heavy operational processes.", status: "EXPLORING" as const },
-  { name: "Logistics", product: null, description: "Movement, exceptions and documentation.", status: "EXPLORING" as const },
+  {
+    name: "Healthcare",
+    product: null,
+    description: "Clinical and administrative workflows.",
+    status: "EXPLORING" as const,
+  },
+  {
+    name: "Semiconductor",
+    product: null,
+    description: "Design, fabrication and supply coordination.",
+    status: "EXPLORING" as const,
+  },
+  {
+    name: "Financial Services",
+    product: null,
+    description: "Compliance-heavy operational processes.",
+    status: "EXPLORING" as const,
+  },
+  {
+    name: "Logistics",
+    product: null,
+    description: "Movement, exceptions and documentation.",
+    status: "EXPLORING" as const,
+  },
 ];
 
 export const eduWorkflow = [
@@ -78,7 +90,11 @@ export const eduWorkflow = [
 
 export const approachSteps = [
   { id: "01", title: "Find the workflow", body: "Map how the work moves today, end to end." },
-  { id: "02", title: "Find the bottleneck", body: "Locate where time, clarity or information is lost." },
+  {
+    id: "02",
+    title: "Find the bottleneck",
+    body: "Locate where time, clarity or information is lost.",
+  },
   { id: "03", title: "Design the system", body: "Build the structure the workflow deserves." },
   { id: "04", title: "Add intelligence", body: "Automate judgement-light work, assist the rest." },
   { id: "05", title: "Measure the outcome", body: "Track the operational number that mattered." },

@@ -1,8 +1,4 @@
-import {
-  BRAND_IMAGE,
-  BRAND_IMAGE_SIZES,
-  BRAND_IMAGE_SRCSET,
-} from "@/data/forgeflowData";
+import { BRAND_IMAGE, BRAND_IMAGE_SIZES, BRAND_IMAGE_SRCSET } from "@/data/forgeflowData";
 
 /**
  * Single global atmospheric background.

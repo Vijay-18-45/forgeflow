@@ -19,7 +19,6 @@ export function EduVertical() {
         Study abroad consultancy software →
       </Link>
 
-
       <div className="mt-14">
         <p className="label-mono mb-5">Workflow</p>
         <Workflow />

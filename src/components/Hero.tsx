@@ -12,7 +12,6 @@ export function Hero() {
         }}
       />
       <div className="relative mx-auto max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pb-32 sm:pt-40">
-
         <div className="flex flex-col items-center gap-14 lg:gap-16">
           <div className="rise max-w-3xl text-center">
             <p className="label-mono">ForgeFlow AI</p>
