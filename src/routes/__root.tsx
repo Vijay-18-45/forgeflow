@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ForgeFlow AI — Vertical Intelligence for Real-World Industries" },
+      { title: "ForzeFlow AI — Vertical Intelligence for Real-World Industries" },
       {
         name: "description",
         content:
-          "ForgeFlow AI builds intelligent software around complex industry workflows, starting with education.",
+          "ForzeFlow AI builds intelligent software around complex industry workflows, starting with education.",
       },
-      { name: "author", content: "ForgeFlow AI" },
+      { name: "author", content: "ForzeFlow AI" },
       { name: "theme-color", content: "#000000" },
       {
         name: "google-site-verification",

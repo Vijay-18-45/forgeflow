@@ -15,7 +15,7 @@ export function Hero() {
 
         <div className="flex flex-col items-center gap-14 lg:gap-16">
           <div className="rise max-w-3xl text-center">
-            <p className="label-mono">ForgeFlow AI</p>
+            <p className="label-mono">ForzeFlow AI</p>
             <h1 className="mt-5 text-4xl font-medium leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
               Intelligence built for your industry.
             </h1>
@@ -29,13 +29,13 @@ export function Hero() {
                 href="#edu"
                 className="rounded-md bg-gradient-brand px-5 py-3 text-center text-sm font-medium text-primary-foreground transition-opacity duration-300 hover:opacity-90"
               >
-                Explore ForgeFlow EDU
+                Explore ForzeFlow EDU
               </a>
               <a
                 href="#contact"
                 className="rounded-md border border-line px-5 py-3 text-center text-sm text-text-secondary transition-colors duration-300 hover:border-electric hover:text-text-primary"
               >
-                Talk to ForgeFlow
+                Talk to ForzeFlow
               </a>
             </div>
 

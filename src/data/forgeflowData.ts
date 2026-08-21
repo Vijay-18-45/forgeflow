@@ -56,7 +56,7 @@ export const principles = [
 export const verticals = [
   {
     name: "Education",
-    product: "ForgeFlow EDU",
+    product: "ForzeFlow EDU",
     description: "Intelligent operating software for study-abroad consultancies.",
     status: "BUILDING" as const,
   },

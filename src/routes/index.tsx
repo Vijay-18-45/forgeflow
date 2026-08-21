@@ -15,9 +15,9 @@ import { HeroProduct } from "@/components/HeroProduct";
 import { Footer } from "@/components/Footer";
 import { BRAND_IMAGE, BRAND_IMAGE_SIZES, BRAND_IMAGE_SRCSET } from "@/data/forgeflowData";
 
-const title = "ForgeFlow AI — Vertical Intelligence for Real-World Industries";
+const title = "ForzeFlow AI — Vertical Intelligence for Real-World Industries";
 const description =
-  "ForgeFlow AI builds intelligent software around complex industry workflows, starting with education.";
+  "ForzeFlow AI builds intelligent software around complex industry workflows, starting with education.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
